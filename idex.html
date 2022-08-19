@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo 1</title>
+    <link rel="stylesheet" href="/Css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Temas a ver en esta pagina</h1>
+        <button id="btnMenu">&equiv;</button>
+        <div><nav id="navegacion">
+        <ul>
+        <li><a href="#Autoconocimiento">Autoconocimiento</a></li>
+        <li><a href="#Autoestima">Autoestima y Autoconcepto</a></li> 
+                <li><a href="">Como influye en la comunicacion</a></li>
+        </ul>            
+        </nav>
+        </div>
+    </header>
+    <main>
+    <section>    
+        <h2>Autoconocimiento</h2><a id="Autoconocimiento"></a>
+        <p>El autoconocimiento es el proceso por el cual una persona adquiere noción de su yo, de lo que lo caracteriza, de sus cualidades y defectos, de sus limitaciones, necesidades, aficiones y temores.
+            <br>
+        Autoconocernos es fundamental para sacar lo mejor de nosotros mismos y entender nuestras habilidades blandas y técnicas. Cuando somos capaces de detectar nuestras debilidades y tenemos voluntad de cambio podemos comenzar a trabajarlas conscientemente para hacer de ellas una oportunidad de mejora. También nos sirve para aprender a estudiar, así sabemos cuáles son las estrategias y estímulos que más nos servirán para procesar información. Si no lo hacemos corremos el peligro de que se conviertan en una amenaza, ya que no creemos que tengamos algo qué mejorar y se pierde la oportunidad de cambio. Debemos observar y mejorar estos aspectos para que no nos perjudiquen en entornos laborales, familiares o cualquier situación de la vida cotidiana.
+        </p>
+        <h3>¿Como trabajo en mi Autoconocimiento?</h3>
+        <p>Este trabajo de introspección no es una tarea fácil, el ego y la tenacidad pueden jugar un rol peligroso. Es necesario tener humildad y volvernos un poco vulnerables para saber reconocer que ciertas áreas nos cuestan más, y hay que tener suficiente paciencia y saber que muchas veces el proceso de avance puede demorar.
+            <br>
+        También es importante comprender que no somos seres estáticos, nos encontramos en constante cambio lo que vuelve al autoconocimiento una labor interminable. Por ejemplo, podemos tener una tendencia a la desorganización y la procrastinación y eso no nos condiciona a ser así el resto de nuestras vidas. Podemos encontrar formas de trabajarlo y modificarlo, y también podemos atravesar situaciones en las que aprendemos y cambiamos.
+            <br>
+        Hay ejercicios que podemos utilizar como herramientas para ayudarnos a comprendernos mejor; por ejemplo, el FODA personal. El FODA es un método de autoconocimiento que te ayuda a identificar tus debilidades, amenazas, fortalezas y oportunidades. Te permite conocer cuál es tu punto de partida para alcanzar un objetivo deseado. Tomarse el tiempo de analizar y escribir todas estas cualidades puede ser una forma efectiva para tener un mejor panorama, y partir desde ahí para tomar decisiones más efectivas.
+        </p>
+    </section>
+    <section>
+        <h2>Autoestima y Autoconcepto</h2><a id="Autoestima"></a>
+        <p>La autoestima es la valoración, percepción o juicio que una persona hace de sí misma en función de la evaluación de sus pensamientos. Esto tiene que ver con nuestra autoconfianza, que va a influir en nuestra conducta y cómo afrontamos diferentes situaciones.
+        </p>
+        <h3>¿Cómo influye la autoestima en la conducta? </h3>
+        <p>Repercute en nuestra forma de relacionarnos con los demás, influye en una posible búsqueda laboral y en los objetivos que nos propongamos. Por ejemplo, si nos proponemos realizar una tarea y nos autoboicoteamos creyendo que no somos capaces de hacerla, nos vamos a frustrar rápidamente y abandonar. O si estamos en una entrevista labora es importante que estemos seguros de nosotros mismos y saber demostrar nuestras habilidades o tener confianza al hablar de nosotros. Si no tenemos la suficiente confianza podemos dar una mala imagen de nosotros, porque la autovaloración define, en parte, la imagen que vamos a dar al mundo
+        </p>
+        <h2>¿Que es el Aurotoconcepto?</h2>
+        <p>El autoconcepto es la imagen que creamos sobre nosotros mismos y está fuertemente ligado a la autoestima. No una imagen solamente visual sino que se trata más bien del conjunto de ideas que creemos que nos definen, es lo que pienso de mi a nivel consciente e inconsciente.
+            <br>
+        Nuestras creencias inconscientes están presentes en todos los ámbitos y son fundamentales tanto al relacionarnos con otras personas como para lograr una meta personal. Por ejemplo, si desde nuestra infancia nos dijeron que somos malos para las matemáticas vamos a crecer creyéndolo y por consecuencia nos condicionamos a serlo de por vida.
+        </p>
+
+    </section>
+    </main>
+    <aside>
+        <h4>Hola</h4>
+        <ul>
+            <li><a href="#">Tips de Mejora</a></li>
+            <li><a href="#">Herramientas de Autoconocimiento</a></li>
+            <li><a href="#">¿Que es la comunicacion?</a></li>
+        </ul>
+    </aside>
+    <script>
+        //Indicar elementos del HTML para manipular
+        const btn = document.querySelector("#btnMenu"),
+          menu = document.querySelector("#navegacion");
+  
+        //Variable de estado => Permite saber si la navegación se está mostrando o no
+        let oculto = true;
+  
+        //Cambiar estilos en linea según ancho de pantalla
+        window.addEventListener("resize", () => {
+          window.outerWidth > 768
+            ? (menu.style.display = "flex")
+            : (menu.style.display = "none");
+        });
+  
+        //Mostrar-ocultar el menu cuando se hace click en boton
+        btn.addEventListener("click", () => {
+          //Acá cambio del display del menu
+          if (oculto) {
+            menu.style.display = "flex"; //Aplica estilo en linea
+          } else {
+            menu.style.display = "none";
+          }
+          //Acá actualizo el estado de la visualización de la navegación
+          oculto = !oculto;
+        });
+      </script>
+    <footer>
+       <span>&copy;Copyright </span>
+    </footer>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
